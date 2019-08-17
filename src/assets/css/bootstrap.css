@@ -3036,13 +3036,13 @@ input[type="button"].btn-block {
 .dropdown,
 .dropleft {
   position: relative;
-  padding: 7px;
+  padding: 0px;
 }
 
 .dropdown a {
   color: #fff;
   font-weight: 400;
-  font-family: "Oswald", sans-serif !important;
+  /* font-family: "Oswald", sans-serif !important; */
 }
 .dropdown a:hover {
   color: #000;

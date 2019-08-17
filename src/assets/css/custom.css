@@ -68,7 +68,7 @@ button:focus {
 }
 
 .section_gap {
-    padding: 120px 0;
+    padding: 10px 0;
 }
 
 @media (max-width: 992px) {
@@ -147,7 +147,7 @@ button:focus {
 
 @media (min-width: 1200px) {
     .header_area.home_menu {
-        display: none;
+        /* display: none; */
     }
     .header_area.home_menu + section,
     .header_area.home_menu + row,
@@ -426,11 +426,11 @@ button:focus {
     top: 0;
     left: 0;
     z-index: 99;
-    transition: background 0.4s, all 0.3s linear;
+    transition: 0.4s, all 0.3s linear;
 }
 
 .header_area .navbar {
-    background: transparent;
+    background: #c2185b;
     padding: 0px;
     border: 0px;
     border-radius: 0px;
@@ -449,9 +449,9 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-    font: 500 13px/100px "Roboto", sans-serif;
+    font: 600 13px/100px "Roboto", sans-serif;
     text-transform: uppercase;
-    color: #222222;
+    color: #FFF;
     padding: 0px;
     display: inline-block;
 }
@@ -462,7 +462,7 @@ button:focus {
 
 .header_area .navbar .nav .nav-item:hover .nav-link,
 .header_area .navbar .nav .nav-item.active .nav-link {
-    color: #f42f2c !important;
+    color: #222222 !important;
 }
 
 .header_area .navbar .nav .nav-item.submenu {
@@ -505,7 +505,7 @@ button:focus {
     border-color: #eeeeee transparent transparent transparent;
     position: absolute;
     right: 24px;
-    top: 45px;
+    top: 25px;
     z-index: 3;
     opacity: 0;
     transition: all 400ms linear;
@@ -523,7 +523,7 @@ button:focus {
 .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
     line-height: 45px;
     color: #222222 !important;
-    padding: 0px 30px;
+    padding: 0px 10px;
     transition: all 150ms linear;
     display: block;
     margin-right: 0px;
@@ -534,7 +534,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-    background: #f42f2c;
+    background: #c2185b;
     color: #fff !important;
 }
 
@@ -685,9 +685,9 @@ button:focus {
     height: 2px;
     width: 30px;
     display: block;
-    background: #222222;
+    background: #c2185b;
     cursor: pointer;
-    transition: background .3s linear;
+    transition: .3s linear;
     position: absolute;
     left: 0px;
     top: 50%;
@@ -698,7 +698,7 @@ button:focus {
     height: 2px;
     width: 30px;
     display: block;
-    background: #222222;
+    background: #c2185b;
     left: 0px;
     top: -10px;
     position: absolute;
@@ -710,7 +710,7 @@ button:focus {
     height: 2px;
     width: 30px;
     display: block;
-    background: #222222;
+    background: #c2185b;
     left: 0px;
     bottom: -10px;
     position: absolute;
@@ -838,7 +838,7 @@ button:focus {
 }
 
 .side_menu .menu_right li a {
-    font-size: 15px;
+    font-size: 13px;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     color: #c2185b;
@@ -849,16 +849,20 @@ button:focus {
     color: #fff;
 }
 
+.side_menu .menu_right li a:active {
+    color: #fff;
+}
+
 .side_menu .menu_right li ul {
     display: none;
 }
 
 .side_menu .menu_right li ul li a {
-    color: #c2185b;
+    color: #fff;
 }
 
 .side_menu .menu_right li ul li:first-child {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .side_menu .menu_right li ul li:hover a {
@@ -1315,7 +1319,7 @@ button:focus {
 .banner_area .banner_inner .shape.shape1 {
     background: url(../img/banner/shape3.png) no-repeat;
     left: -10px;
-    top: 0px;
+    top: -10px;
     -webkit-animation: glow 1s infinite alternate 0.5s;
     -moz-animation: glow 1s infinite alternate 0.5s;
     -o-animation: glow 1s infinite alternate 0.5s;
@@ -4387,9 +4391,6 @@ h6 {
     align-self: center;
 }
 
-.story_inner .story_text {
-    max-width: 390px;
-}
 
 .story_inner .story_text h2 {
     color: #222222;
@@ -4833,7 +4834,7 @@ h6 {
 }
 
 .tp_widgets .list li:hover a {
-    color: #fff;
+    color: #c2185b;
 }
 
 .news_widget {
@@ -4892,13 +4893,17 @@ h6 {
 
 .news_widget .input-group .sub-btn {
     border-radius: 0px;
-    background: #f42f2c;
+    background: #c2185b;
     outline: none !important;
     box-shadow: none !important;
     padding: 0px;
     width: 42px;
     cursor: pointer;
     color: #fff;
+}
+
+.news_widget .input-group .sub-btn:hover {
+    background: #c2185c8e;
 }
 
 .footer_title {
@@ -4956,7 +4961,7 @@ h6 {
 
 .footer-bottom .footer-social a:hover {
     color: #fff;
-    background: #f42f2c;
+    background: #c2185b;
 }
 
 

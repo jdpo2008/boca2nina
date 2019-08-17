@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ServiceComponent } from './pages/service/service.component';
 
 const routes: Routes = [
   {
@@ -18,14 +20,14 @@ const routes: Routes = [
         path: 'index',
         component: HomeComponent
       },
-      // {
-      //   path: 'about',
-      //   component: AboutComponent
-      // },
-      // {
-      //   path: 'services/web',
-      //   component: ServiceWebComponent
-      // },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'services',
+        component: ServiceComponent
+      }
       // {
       //   path: 'services/hosting',
       //   component: ServiceHostingComponent

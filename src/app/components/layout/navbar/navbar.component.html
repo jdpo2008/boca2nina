@@ -14,31 +14,31 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
           <ul class="nav navbar-nav menu_nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" [routerLink]="['/pages/index']">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">About</a>
+            <li class="nav-item" [routerLinkActive]="['active']" >
+              <a class="nav-link" [routerLink]="['/pages/about']">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+            <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link" [routerLink]="['/pages/menu']">Menu</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="book-table.html">Book a table</a>
-            </li>
+            </li> -->
             <li class="nav-item submenu dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                aria-expanded="false">Pages</a>
+                aria-expanded="false">Multimedia</a>
               <ul class="dropdown-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Gallery</a>
+                  <a class="nav-link" href="gallery.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="elements.html">Elements</a>
+                  <a class="nav-link" href="elements.html">Eventos</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item submenu dropdown">
+            <!-- <li class="nav-item submenu dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                 aria-expanded="false">Blog</a>
               <ul class="dropdown-menu">
@@ -49,10 +49,10 @@
                   <a class="nav-link" href="single-blog.html">Blog Details</a>
                 </li>
               </ul>
-            </li>
+            </li>-->
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
+              <a class="nav-link" href="contact.html">Contactos</a>
+            </li> 
           </ul>
         </div>
       </div>

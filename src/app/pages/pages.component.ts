@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as Waves from 'node-waves';
 import * as $ from 'jquery';
 
 @Component({
@@ -11,9 +12,9 @@ export class PagesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('.toggle_icon').on('click', () => {
-      $( 'body' ).toggleClass( 'open' );
-    });
+
+    Waves.attach('.nav-link', ['waves-light']);
+    Waves.init();
   }
 
 }

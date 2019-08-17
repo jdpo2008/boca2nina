@@ -11,20 +11,20 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    const NAV_OFFSET_TOP = $('.header_area').height() + 50;
+    this.navbarFixed();
+  }
 
-    function navbarFixed() {
-      if ($('.header_area').length) {
-        $(window).scroll(() => {
-          const scroll = $(window).scrollTop();
-          if (scroll >= NAV_OFFSET_TOP) {
-            $('.header_area').addClass('navbar_fixed');
-          } else {
-            $('.header_area').removeClass('navbar_fixed');
-          }
-        });
-      }
+  navbarFixed() {
+    const NAV_OFFSET_TOP = $('.header_area').height() + 20;
+    if ($('.header_area').length) {
+      $(window).scroll(() => {
+        const scroll = $(window).scrollTop();
+        if (scroll >= NAV_OFFSET_TOP) {
+          $('.header_area').addClass('navbar_fixed');
+        } else {
+          $('.header_area').removeClass('navbar_fixed');
+        }
+      });
     }
-    navbarFixed();
   }
 }

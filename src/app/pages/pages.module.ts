@@ -14,10 +14,13 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { PagesComponent } from './pages.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { GaleryComponent } from './galery/galery.component';
+import { ServiceComponent } from './service/service.component';
 
 
 @NgModule({
-  declarations: [ PagesComponent, NotfoundComponent, HomeComponent ],
+  declarations: [ PagesComponent, NotfoundComponent, HomeComponent, AboutComponent, GaleryComponent, ServiceComponent ],
   imports: [
     RouterModule,
     CommonModule,
