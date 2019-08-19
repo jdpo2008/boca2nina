@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class AboutComponent implements OnInit {
-
+  url = '';
   constructor() { }
 
   ngOnInit() {
+    this.url = 'url("./assets/img/banner/parrallax2.jpg")';
   }
 
 }

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
-
+import { LightboxModule } from 'ngx-lightbox';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
@@ -17,10 +17,19 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { GaleryComponent } from './galery/galery.component';
 import { ServiceComponent } from './service/service.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
-  declarations: [ PagesComponent, NotfoundComponent, HomeComponent, AboutComponent, GaleryComponent, ServiceComponent ],
+  declarations: [
+    PagesComponent,
+    NotfoundComponent,
+    HomeComponent,
+    AboutComponent,
+    GaleryComponent,
+    ServiceComponent,
+    ContactComponent
+  ],
   imports: [
     RouterModule,
     CommonModule,
@@ -30,7 +39,8 @@ import { ServiceComponent } from './service/service.component';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    LightboxModule
   ],
   exports: [ PagesComponent, NotfoundComponent, HomeComponent ]
 })

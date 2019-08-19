@@ -4,10 +4,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
-
 import { PagesModule } from './pages/pages.module';
 import { AppRoutingModule } from './app-routing.module';
-// import { NavbarCanvasComponent } from './components/layout/navbar-canvas/navbar-canvas.component';
 
 @NgModule({
   declarations: [

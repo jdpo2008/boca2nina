@@ -1,68 +1,58 @@
 <!--================Offcanvus Menu Area =================-->
 <div class="side_menu">
-    <a class="logo" [routerLink]="['/pages/index']">
-        <img src="../../../../assets/img/logo.png" alt="">
-    </a>
-    <ul class="list menu_right">
+  <a class="logo" [routerLink]="['/pages/index']">
+    <img src="../../../../assets/img/logo.png" alt="">
+  </a>
+  <ul class="list menu_right">
+    <li>
+      <a [routerLink]="['/pages/index']">Inicio</a>
+    </li>
+    <li>
+      <a [routerLink]="['/pages/about']">Quienes Somos?</a>
+    </li>
+    <li>
+      <a [routerLink]="['/pages/menu']">Productos</a>
+    </li>
+    <li>
+      <a href="javascript:;">Multimedia</a>
+      <ul class="list">
         <li>
-            <a [routerLink]="['/pages/index']" >Inicio</a>
+          <a [routerLink]="['/pages/gallery']">Gallery</a>
         </li>
         <li>
-            <a [routerLink]="['/pages/about']">About</a>
+          <a href="elements.html">Eventos</a>
         </li>
-        <li>
-            <a [routerLink]="['/pages/menu']">Menu</a>
-        </li>
-        <!-- <li>
-            <a [routerLink]="['/pages/index']">Book a table</a>
-        </li> -->
-        <li>
-            <a href="javascript:;">Multimedia</a>
-            <ul class="list">
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
-                <li>
-                    <a href="elements.html">Elements</a>
-                </li>
-            </ul>
-        </li>
-        <!-- <li>
-            <a href="#">Blog</a>
-            <ul class="list">
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="single-blog.html">Blog Details</a>
-                </li>
-            </ul>
-        </li> -->
-        <li>
-            <a [routerLink]="['/pages/contact']">Contact</a>
-        </li>
-    </ul>
-    <ul class="list social">
-        <li>
-            <a href="#">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fab fa-dribbble"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fab fa-behance"></i>
-            </a>
-        </li>
-    </ul>
+      </ul>
+    </li>
+    <li>
+      <a [routerLink]="['/pages/contacto']">Contactos</a>
+    </li>
+  </ul>
+  <ul class="list social">
+    <li>
+      <a href="#" class="social-icon social-icon-sm social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+        <i class="fab fa-facebook-f facebook"></i>
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="social-icon social-icon-sm social-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+        <i class="fab fa-twitter twitter"></i>
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="social-icon social-icon-sm social-linkedin" data-toggle="tooltip" data-placement="top" title="Linkedin">
+        <i class="fab fa-linkedin linkedin"></i>
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="social-icon social-icon-sm social-youtube" data-toggle="tooltip" data-placement="top" title="Youtube">
+        <i class="fab fa-youtube youtube"></i>
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  </ul>
 </div>
 <!--================End Offcanvus Menu Area =================-->

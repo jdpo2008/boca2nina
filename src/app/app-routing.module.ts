@@ -5,6 +5,8 @@ import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ServiceComponent } from './pages/service/service.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { GaleryComponent } from './pages/galery/galery.component';
 
 const routes: Routes = [
   {
@@ -18,24 +20,29 @@ const routes: Routes = [
     children: [
       {
         path: 'index',
-        component: HomeComponent
+        component: HomeComponent,
+        data: { titulo: 'Home'}
       },
       {
         path: 'about',
-        component: AboutComponent
+        component: AboutComponent,
+        data: { titulo: 'Quienes Somos'}
       },
       {
-        path: 'services',
-        component: ServiceComponent
+        path: 'productos',
+        component: ServiceComponent,
+        data: { titulo: 'Productos'}
+      },
+      {
+        path: 'gallery',
+        component: GaleryComponent,
+        data: { titulo: 'Galeria'}
+      },
+      {
+        path: 'contacto',
+        component: ContactComponent,
+        data: { titulo: 'Contacto'}
       }
-      // {
-      //   path: 'services/hosting',
-      //   component: ServiceHostingComponent
-      // },
-      // {
-      //   path: 'contacto',
-      //   component: ContactComponent
-      // }
     ]
   },
   {

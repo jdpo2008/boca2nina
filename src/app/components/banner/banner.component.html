@@ -1,0 +1,15 @@
+<!--================ Banner Area =================-->
+<section class="banner_area" >
+  <div class="banner_inner d-flex align-items-center">
+    <div id="first-example" cwdjParallax   [ngStyle]="{'background-image': getUrl()}">
+      <div class="banner_content text-center">
+        <h1>{{ label }}</h1>
+        <div class="page_link">
+          <a [routerLink]="['/pages/index']" [routerLinkActive]="['active']" >Home</a>
+          <a href="javascript:;" >{{ label }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================End Banner Area =================-->

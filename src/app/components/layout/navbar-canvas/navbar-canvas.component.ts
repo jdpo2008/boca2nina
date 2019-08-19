@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -6,8 +6,7 @@ import * as $ from 'jquery';
   templateUrl: './navbar-canvas.component.html',
   styles: []
 })
-export class NavbarCanvasComponent implements OnInit {
-
+export class NavbarCanvasComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit() {
@@ -20,6 +19,10 @@ export class NavbarCanvasComponent implements OnInit {
         $(this).closest('li').children('ul').slideToggle(200);
         return false;
     });
+  }
+
+  ngOnDestroy(): void {
+    $( 'body' ).toggleClass( 'open' );
   }
 
 }

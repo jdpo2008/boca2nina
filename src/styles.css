@@ -6,3 +6,127 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+agm-map {
+    height: 300px;
+}
+
+[cwdjParallax] {
+    width: 100%;
+    height: 500px;
+    
+    background-size: 100%;
+}
+
+#first-example {
+    /* background-image: url('./assets/img/banner/parrallax.jpg'); */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+ /* Social Icon */
+.social-icon {
+	margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    border-color: transparent; 
+    overflow: hidden;
+	display:inline-block;
+	text-decoration:none !important;
+	text-align: center;
+	cursor: pointer;
+	font-style: normal;
+	letter-spacing: 0em !important;
+	color: #eaeaea !important; 
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.social-icon:hover>i {
+    color:#fff;
+}
+
+.social-icon i {
+	display: block;
+	position: relative;
+    width: 40px;
+    height: 40px;
+	margin-top:6px;
+	font-size: 28px;
+}
+
+body:not(.device-touch) .social-icon {
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+body:not(.device-touch) .social-icon i {
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.social-icon:hover i:first-child { 
+	margin-top: -38px; 
+}
+
+.social-icon:hover i:last-child { 
+	margin-top:4px;
+}
+
+/* small */
+a.social-icon.social-icon-sm,
+a.social-icon.social-icon-sm>i {
+	width: 30px;
+	height: 30px;
+	margin-top: 3px;
+	font-size: 17px;
+	line-height: 23px;
+}
+
+a.social-icon.social-icon-sm>i:last-child {
+	padding-top:7px;
+}
+
+a.social-icon.social-icon-sm>i[class*=" fa-"],
+a.social-icon.social-icon-sm>i[class^=fa-] {
+	font-size:17px;
+}
+
+.facebook {
+    color: #3B5998;
+}
+
+.twitter {
+    color: #0E76A8;
+}
+
+.linkedin{
+    color: #0E76A8;
+}
+
+.youtube{
+    color: #C4302B;
+}
+
+.social-facebook:hover { background-color: #3B5998 !important; }
+.social-facebook { background-color: #3B5998; }
+.social-gplus:hover { background-color: #DD4B39 !important; }
+.social-gplus { background-color: #DD4B39; }
+.social-google:hover { background-color: #DD4B39 !important; }
+.social-google { background-color: #DD4B39; }
+.social-linkedin:hover { background-color: #0E76A8 !important; }
+.social-linkedin { background-color: #0E76A8; }
+.social-rss:hover { background-color: #EE802F !important; }
+.social-rss { background-color: #EE802F; }
+.social-skype:hover { background-color: #00AFF0 !important; }
+.social-skype { background-color: #00AFF0; }
+.social-twitter:hover { background-color: #00ACEE !important; }
+.social-twitter { background-color: #00ACEE; }
+.social-youtube:hover { background-color: #C4302B !important; }
+.social-youtube { background-color: #C4302B; }

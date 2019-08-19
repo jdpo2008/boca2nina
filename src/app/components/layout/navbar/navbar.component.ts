@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.navbarFixed();
+    // this.navbarFixed();
   }
 
   navbarFixed() {

@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.7",
     "@angular/animations": "~8.0.0",
     "@angular/cdk": "~8.1.2",
     "@angular/common": "~8.0.0",
@@ -22,9 +23,14 @@
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
     "aos": "^3.0.0-beta.6",
+    "cwdj-parallax": "^0.1.2",
     "jquery": "^3.4.1",
+    "mdbootstrap": "^4.8.8",
+    "ngx-lightbox": "^2.0.2",
     "node-waves": "^0.7.6",
     "rxjs": "~6.4.0",
+    "screenfull": "^3.3.0",
+    "simplelightbox": "^1.17.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },

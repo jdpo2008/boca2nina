@@ -1,11 +1,11 @@
 <!--================Header Menu Area =================-->
 <header class="header_area home_menu">
   <div class="main_menu">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="navbar-brand logo_h" [routerLink]="['/pages/index']">
-          <img src="../../../../assets/img/logo-2.png" alt="">
+          <img src="../../../../assets/img/logo-2.png" width="auto" height="50px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,10 +18,10 @@
               <a class="nav-link" [routerLink]="['/pages/index']">Home</a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']" >
-              <a class="nav-link" [routerLink]="['/pages/about']">About</a>
+              <a class="nav-link" [routerLink]="['/pages/about']">Quienes Somos?</a>
             </li>
             <li class="nav-item" [routerLinkActive]="['active']">
-              <a class="nav-link" [routerLink]="['/pages/menu']">Menu</a>
+              <a class="nav-link" [routerLink]="['/pages/productos']">Productos</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="book-table.html">Book a table</a>
@@ -31,7 +31,7 @@
                 aria-expanded="false">Multimedia</a>
               <ul class="dropdown-menu">
                 <li class="nav-item">
-                  <a class="nav-link" href="gallery.html">Galeria</a>
+                  <a class="nav-link" [routerLink]="['/pages/gallery']">Galeria</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="elements.html">Eventos</a>
@@ -50,8 +50,8 @@
                 </li>
               </ul>
             </li>-->
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contactos</a>
+            <li class="nav-item" [routerLinkActive]="['active']">
+              <a class="nav-link" [routerLink]="['/pages/contacto']">Contactos</a>
             </li> 
           </ul>
         </div>

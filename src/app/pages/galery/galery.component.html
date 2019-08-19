@@ -1,1 +1,23 @@
-<p>galery works!</p>
+<app-navbar></app-navbar>
+
+<app-banner [url]="url"></app-banner>
+
+<!--================ Gallery Area =================-->
+<section class="gallery_area">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4 all-image" *ngFor="let image of albums; let i=index">
+        <div class="single-gallery">
+          <div class="overlay"></div>
+          <img class="img-fluid w-100" [src]="image.src" alt="">
+          <div class="content">
+            <i class="fal fa-image" (click)="open(i)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--================ End Gallery Area =================-->
+
+<app-footer></app-footer>

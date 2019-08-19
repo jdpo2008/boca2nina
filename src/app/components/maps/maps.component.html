@@ -1,0 +1,8 @@
+<!-- the component as the initial center of the map: -->
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="13">
+  <agm-marker [latitude]="lat" [longitude]="lng" (markerClick)="clickedMarker(label)" [label]="label">
+    <agm-info-window>
+      <strong>Jirón Enrique Arnaez #451</strong>
+    </agm-info-window>
+  </agm-marker>
+</agm-map>
