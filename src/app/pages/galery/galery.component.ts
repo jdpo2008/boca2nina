@@ -10,11 +10,49 @@ import { Lightbox, LightboxConfig  } from 'ngx-lightbox';
 export class GaleryComponent implements OnInit {
   private albums: any[] = [];
   url = '';
+  caption = [{
+    index: 1,
+    Descripcion: "Torta Tematica 44 Gatos"
+  },
+  {
+    index: 2,
+    Descripcion: "Torta de Chocolate"
+  },
+  {
+    index: 3,
+    Descripcion: "Torta Simple con Dibujo"
+  },
+  {
+    index: 4,
+    Descripcion: "Torta Resotones y Cereza"
+  },
+  {
+    index: 5,
+    Descripcion: "Mil Hojas Frutas"
+  },
+  {
+    index: 6,
+    Descripcion: "Mil Hojas Frutas"
+  },
+  {
+    index: 7,
+    Descripcion: "Mil Hojas Frutas Crema Pastelera"
+  },
+  {
+    index: 8,
+    Descripcion: "Torta Tematica Minie Mouse"
+  },
+  {
+    index: 9,
+    Descripcion: "Torta Tematica Redes Sociales"
+  }];
+
   constructor(private lightbox: Lightbox, private lighboxConfig: LightboxConfig) {
-    for (let i = 1; i <= 7; i++) {
-      const SRC = '../../../assets/img/gallery/g' + i + '.jpg';
-      const CAPTION = 'Imagen ' + i + ' caption here';
-      const THUMB = '../../../assets/img/gallery/g' + i + '.jpg';
+    for (let i = 1; i <= 9; i++) {
+      const text = this.caption.find(x => x.index === i);
+      const SRC = '/assets/img/gallery/g' + i + '.jpg';
+      const CAPTION = 'Imagen ' + i +  ' ' + text.Descripcion;
+      const THUMB = '/assets/img/gallery/g' + i + '.jpg';
       const album = {
          src: SRC,
          caption: CAPTION,

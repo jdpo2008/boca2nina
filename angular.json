@@ -27,8 +27,7 @@
               "./node_modules/ngx-lightbox/lightbox.css",
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -120,5 +119,8 @@
       }
     }
   },
-  "defaultProject": "Boca2nina"
+  "defaultProject": "Boca2nina",
+  "cli": {
+    "analytics": "4b6c3707-f2fa-4986-8525-59815d96184c"
+  }
 }

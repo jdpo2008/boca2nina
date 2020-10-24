@@ -1,132 +1,234 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('./assets/css/custom.css');
-@import url('./assets/fonts/font-awesome/css/all.css');
+@import url("./assets/css/custom.css");
+@import url("./assets/fonts/font-awesome/css/all.css");
 
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 agm-map {
-    height: 300px;
+  height: 300px;
 }
 
 [cwdjParallax] {
-    width: 100%;
-    height: 500px;
-    
-    background-size: 100%;
+  width: 100%;
+  height: 500px;
+
+  background-size: 100%;
 }
 
 #first-example {
-    /* background-image: url('./assets/img/banner/parrallax.jpg'); */
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  /* background-image: url('./assets/img/banner/parrallax.jpg'); */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
- /* Social Icon */
+/* Social Icon */
 .social-icon {
-	margin: 0 5px 5px 0;
-    width: 40px;
-    height: 40px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    border-color: transparent; 
-    overflow: hidden;
-	display:inline-block;
-	text-decoration:none !important;
-	text-align: center;
-	cursor: pointer;
-	font-style: normal;
-	letter-spacing: 0em !important;
-	color: #eaeaea !important; 
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-			border-radius: 3px;
+  margin: 0 5px 5px 0;
+  width: 40px;
+  height: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none !important;
+  text-align: center;
+  cursor: pointer;
+  font-style: normal;
+  letter-spacing: 0em !important;
+  color: #eaeaea !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
-.social-icon:hover>i {
-    color:#fff;
+.social-icon:hover > i {
+  color: #fff;
 }
 
 .social-icon i {
-	display: block;
-	position: relative;
-    width: 40px;
-    height: 40px;
-	margin-top:6px;
-	font-size: 28px;
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 6px;
+  font-size: 28px;
 }
 
 body:not(.device-touch) .social-icon {
-	-webkit-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 body:not(.device-touch) .social-icon i {
-	-webkit-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.social-icon:hover i:first-child { 
-	margin-top: -38px; 
+.social-icon:hover i:first-child {
+  margin-top: -38px;
 }
 
-.social-icon:hover i:last-child { 
-	margin-top:4px;
+.social-icon:hover i:last-child {
+  margin-top: 4px;
 }
 
 /* small */
 a.social-icon.social-icon-sm,
-a.social-icon.social-icon-sm>i {
-	width: 30px;
-	height: 30px;
-	margin-top: 3px;
-	font-size: 17px;
-	line-height: 23px;
+a.social-icon.social-icon-sm > i {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+  font-size: 17px;
+  line-height: 23px;
 }
 
-a.social-icon.social-icon-sm>i:last-child {
-	padding-top:7px;
+a.social-icon.social-icon-sm > i:last-child {
+  padding-top: 7px;
 }
 
-a.social-icon.social-icon-sm>i[class*=" fa-"],
-a.social-icon.social-icon-sm>i[class^=fa-] {
-	font-size:17px;
+a.social-icon.social-icon-sm > i[class*=" fa-"],
+a.social-icon.social-icon-sm > i[class^="fa-"] {
+  font-size: 17px;
 }
 
 .facebook {
-    color: #3B5998;
+  color: #3b5998;
 }
 
 .twitter {
-    color: #0E76A8;
+  color: #0e76a8;
 }
 
-.linkedin{
-    color: #0E76A8;
+#insta {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 75%,
+    #285aeb 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.youtube{
-    color: #C4302B;
+.instagram {
+  width: 100%;
+  height: 100%;
 }
 
-.social-facebook:hover { background-color: #3B5998 !important; }
-.social-facebook { background-color: #3B5998; }
-.social-gplus:hover { background-color: #DD4B39 !important; }
-.social-gplus { background-color: #DD4B39; }
-.social-google:hover { background-color: #DD4B39 !important; }
-.social-google { background-color: #DD4B39; }
-.social-linkedin:hover { background-color: #0E76A8 !important; }
-.social-linkedin { background-color: #0E76A8; }
-.social-rss:hover { background-color: #EE802F !important; }
-.social-rss { background-color: #EE802F; }
-.social-skype:hover { background-color: #00AFF0 !important; }
-.social-skype { background-color: #00AFF0; }
-.social-twitter:hover { background-color: #00ACEE !important; }
-.social-twitter { background-color: #00ACEE; }
-.social-youtube:hover { background-color: #C4302B !important; }
-.social-youtube { background-color: #C4302B; }
+.youtube {
+  color: #c4302b;
+}
+
+.social-facebook:hover {
+  background-color: #3b5998 !important;
+}
+.social-facebook {
+  background-color: #3b5998;
+}
+.social-gplus:hover {
+  background-color: #dd4b39 !important;
+}
+.social-gplus {
+  background-color: #dd4b39;
+}
+.social-google:hover {
+  background-color: #dd4b39 !important;
+}
+.social-google {
+  background-color: #dd4b39;
+}
+.social-instagram:hover {
+  background: #f09433 !important;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ) !important;
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ) !important;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  ) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social-rss:hover {
+  background-color: #ee802f !important;
+}
+.social-rss {
+  background-color: #ee802f;
+}
+.social-skype:hover {
+  background-color: #00aff0 !important;
+}
+.social-skype {
+  background-color: #00aff0;
+}
+.social-twitter:hover {
+  background-color: #00acee !important;
+}
+.social-twitter {
+  background-color: #00acee;
+}
+.social-youtube:hover {
+  background-color: #c4302b !important;
+}
+.social-youtube {
+  background-color: #c4302b;
+}

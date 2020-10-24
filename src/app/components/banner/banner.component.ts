@@ -16,12 +16,12 @@ export class BannerComponent implements OnInit {
   constructor(private router: Router, public title: Title, public meta: Meta) {
     this.getDataRoute().subscribe(data => {
       this.label = data.titulo;
-      // this.title.setTitle( this.label );
-      // const metaTag: MetaDefinition = {
-      //   name: 'description',
-      //   content: this.label
-      // };
-      // this.meta.updateTag(metaTag);
+      this.title.setTitle( this.label );
+      const metaTag: MetaDefinition = {
+        name: 'description',
+        content: this.label
+      };
+      this.meta.updateTag(metaTag);
     });
   }
 

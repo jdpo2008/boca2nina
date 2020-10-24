@@ -10,10 +10,10 @@ export class MapsComponent implements OnInit {
   lng: number;
   label: string;
   constructor() { }
-
+   
   ngOnInit() {
-    this.lat = -12.0220229;
-    this.lng = -77.0780641;
+    this.lat = -12.023114;
+    this.lng = -77.082745;
     this.label = 'A';
   }
   clickedMarker(label: string) {
