@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ComponentsModule } from '../components/components.module';
 import { LightboxModule } from 'ngx-lightbox';
 
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -12,28 +11,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { PagesComponent } from './pages.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { GaleryComponent } from './galery/galery.component';
-import { ServiceComponent } from './service/service.component';
-import { ContactComponent } from './contact/contact.component';
-
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
   declarations: [
-    PagesComponent,
-    NotfoundComponent,
-    HomeComponent,
-    AboutComponent,
-    GaleryComponent,
-    ServiceComponent,
-    ContactComponent
+    PagesComponent
   ],
   imports: [
     RouterModule,
+    PagesRoutingModule,
     CommonModule,
-    ComponentsModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
@@ -42,6 +29,6 @@ import { ContactComponent } from './contact/contact.component';
     LayoutModule,
     LightboxModule
   ],
-  exports: [ PagesComponent, NotfoundComponent, HomeComponent ]
+  exports: [ PagesComponent ]
 })
 export class PagesModule { }

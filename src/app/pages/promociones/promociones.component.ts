@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-service',
-  templateUrl: './service.component.html',
-  styles: []
+  selector: 'app-promociones',
+  templateUrl: './promociones.component.html',
+  styles: [
+  ]
 })
-export class ServiceComponent implements OnInit {
+export class PromocionesComponent implements OnInit {
 
   url = '';
   constructor() { }
@@ -13,5 +14,6 @@ export class ServiceComponent implements OnInit {
   ngOnInit() {
     this.url = 'url("./assets/img/banner/parrallax8.jpg")';
   }
+
 
 }

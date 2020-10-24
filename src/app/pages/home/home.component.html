@@ -13,11 +13,13 @@
   <div class="container-fluid pl-0">
     <div class="row justify-content-center align-items-center full_height">
       <div class="col-lg-6 p-0">
-        <div class="banner_left d-flex justify-content-center flex-column">
-          <h1>Boca2nina</h1>
-          <p>Proximamente estare por aqui ofreciendo mis deliciosos bacaditos para cualquier ocasion que lo amerite. 
+        <div class="banner_left">
+          <img src="/assets/img/logo_boca2_bg.png" width="180" hight="180" alt="" style="margin-bottom: 25px;">
+          <p class="text-justify">Proximamente estare por aqui ofreciendo mis deliciosos bacaditos para cualquier ocasion que lo amerite. 
           </p>
-          <a mat-flat-button color="primary" class="main_btn" href="#">Promociones</a>
+          <a mat-flat-button color="primary" class="main_btn" [routerLink]="['/pages/promociones']" >
+            <i class="fas fa-ice-cream"></i> Promociones
+          </a>
         </div>
       </div>
       <div class="col-lg-6">
